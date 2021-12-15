@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
@@ -48,42 +48,40 @@
         </header>
         <main>
             <section>
-                <div class="main">
-                    <div class="container-movie">
-                        <div class="movie-container-block">
-                            <div class="list-container-movie">
-                                <div class="image-container">
-                                    <a href="showfilm.html"><img src="img/Shrek.jpg" alt="" class="image-movie"></a>
-                                </div>
-                                <a href="#" class="name-movie">Шрек</a>
-                            </div>
-                            <div class="list-container-movie">
-                                <div class="image-container">
-                                    <a href="#"><img src="img/mandalorian.jpg" alt="" class="image-movie"></a>
-                                </div>
-                                <a href="#" class="name-movie">Мандалорець</a>
-                            </div>
-                            <div class="list-container-movie">
-                                <div class="image-container">
-                                    <a href="#"><img src="img/cursed.jfif" alt="" class="image-movie"></a>
-                                </div>
-                                <a href="#" class="name-movie">Проклята</a>
-                            </div>
-                            <div class="list-container-movie">
-                                <div class="image-container">
-                                    <a href="#"><img src="img/Soul.jfif" alt="" class="image-movie"></a>
-                                </div>
-                                <a href="#" class="name-movie">Душа</a>
-                            </div>
-
-                            <div class="list-container-movie">
-                                <div class="image-container">
-                                    <a href="#"><img src="img/Drunk.jpg" alt="" class="image-movie"></a>
-                                </div>
-                                <a href="#" class="name-movie">Ще по одній</a>
-                            </div>
-                        </div>
+                <div class="login-container">
+                    <div class="image">
+                        <img src="img/Cinema.png" alt="">
                     </div>
+                    <div class="form-login">
+                        <h1>Реєстрація</h1>
+                        <form action="">
+                            <div class="textbox">
+                                <input type="text" name="login" id="login" class="login" placeholder="Ваш логін" value="">
+                            </div>
+                            <div class="textbox">
+                                <input type="email" name="email" id="email" class="email" placeholder="Ваш email" value="">
+                            </div>
+                            <div class="textbox">
+                                <input type="password" name="password" class="password" id="password" placeholder="Пароль" value="">
+                            </div>
+                            <button type="submit" class="button-log-in">Реєстрація</button>
+                            <div class="textbox">
+                                <label for="checkbox">Я погоджуюся з правилами сайта</label>
+                                <input type="checkbox" name="checkbox" id="">
+                            </div>
+                            <h4>Або увійдіть за допомогою</h4>
+                            <div class="social">
+                                <a href="#">
+                                    <img src="SocialIcon/facebook.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="SocialIcon/search.png" alt="">
+                                </a>
+                            </div>
+                        </form>
+                        <p>Маєте обліковий запис?<a href="login.html" class="link-for-sing-up">Заходь</a></p>
+                    </div>
+                </div>
             </section>
         </main>
         <footer class="py-5 border-top bg-light">
@@ -120,8 +118,8 @@
                 </div>
             </div>
         </footer>
-        </div>
-        <script src="Script/bootstrap.bundle.min.js"></script>
+    </div>
 </body>
+<script src="Script/bootstrap.bundle.min.js"></script>
 
 </html>

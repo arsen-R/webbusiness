@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
+                <div class="container-fluid">
+                    <a class="navbar-brand" asp-area="" href="index.html">
+                        KinoSite
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="movie.html">Фільми</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark">Серіали</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" asp-controller="Home" asp-action="Search" method="get">
+                            <input class="form-control me-2" type="search" id="searchString" placeholder="Search" aria-label="Search" name="SearchString">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="login.html">Логін</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="regist.html">Реєстрація</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div class="main">
+                    <div class="container-movie">
+                        <!-- 1 -->
+                        <div class="movie-container-block">
+                            <div class="list-container-movie">
+                                <div class="image-container">
+                                    <a href="#"><img src="img/The Shawshank Redemption .jpg" alt="" class="image-movie"></a>
+                                </div>
+                                <a href="#" class="name-movie">Втеча з Шоушенка</a>
+                            </div>
+                            <div class="list-container-movie">
+                                <div class="image-container">
+                                    <a href="#"><img src="img/The-godfather.jpg" alt="" class="image-movie"></a>
+                                </div>
+                                <a href="#" class="name-movie">Хрещений батько</a>
+                            </div>
+                            <div class="list-container-movie">
+                                <div class="image-container">
+                                    <a href="#"><img src="img/The-godfather-p2.jpg" alt="" class="image-movie"></a>
+                                </div>
+                                <a href="#" class="name-movie">Хрещений батько 2</a>
+                            </div>
+                            <div class="list-container-movie">
+                                <div class="image-container">
+                                    <a href="#"><img src="img/Dark_Knight.jpg" alt="" class="image-movie"></a>
+                                </div>
+                                <a href="#" class="name-movie">Темний лицар</a>
+                            </div>
+
+                            <div class="list-container-movie">
+                                <div class="image-container">
+                                    <a href="#"><img src="img/12_ angry_man.jpg" alt="" class="image-movie"></a>
+                                </div>
+                                <a href="#" class="name-movie">12 розгніваних чоловіків</a>
+                            </div>
+                            <div class="list-container-movie">
+                                <div class="image-container">
+                                    <a href="#"><img src="img/Schindler's List .jfif" alt="" class="image-movie"></a>
+                                </div>
+                                <a href="#" class="name-movie">Список Шинлера</a>
+                            </div>
+                            <div class="list-container-movie">
+                                <div class="image-container">
+                                    <a href="#"><img src="img/TheLordoftheRingsTheReturnoftheKing.jpg" alt="" class="image-movie"></a>
+                                </div>
+                                <a href="#" class="name-movie">Володар перстнів: Повернення короля</a>
+                            </div>
+                            <div class="list-container-movie">
+                                <div class="image-container">
+                                    <a href="#"><img src="img/Pulp Fiction.jpg" alt="" class="image-movie"></a>
+                                </div>
+                                <a href="#" class="name-movie">Кримінальне чтиво</a>
+                            </div>
+
+                            <div class="list-container-movie">
+                                <div class="image-container">
+                                    <a href="#"><img src="img/The Good, the Bad and the Ugly .jpg" alt="" class="image-movie"></a>
+                                </div>
+                                <a href="#" class="name-movie">Хороший, поганий, злий</a>
+                            </div>
+                            <div class="list-container-movie">
+                                <div class="image-container">
+                                    <a href="#"><img src="img/TheLord_of_theRingsTheFellowshipoftheRing.jpg" alt="" class="image-movie"></a>
+                                </div>
+                                <a href="#" class="name-movie">Володар перстнів: Хранителі перстня</a>
+                            </div>
+                            <div class="list-container-movie">
+                                <div class="image-container">
+                                    <a href="#"><img src="img/Fight Club.jpg" alt="" class="image-movie"></a>
+                                </div>
+                                <a href="#" class="name-movie">Бійцівський клуб</a>
+                            </div>
+                            <div class="list-container-movie">
+                                <div class="image-container">
+                                    <a href="#"><img src="img/ForrestGump.jpg" alt="" class="image-movie"></a>
+                                </div>
+                                <a href="#" class="name-movie">Форрест Гамп</a>
+                            </div>
+
+                            <div class="list-container-movie">
+                                <div class="image-container">
+                                    <a href="#"><img src="img/Inception.jpg" alt="" class="image-movie"></a>
+                                </div>
+                                <a href="#" class="name-movie">Початок</a>
+                            </div>
+                            <div class="list-container-movie">
+                                <div class="image-container">
+                                    <a href="#"><img src="img/Lord_of_the_Rings_-_The_Two_Towers_(2002).jpg" alt="" class="image-movie"></a>
+                                </div>
+                                <a href="#" class="name-movie">Володар перстнів: Дві вежі</a>
+                            </div>
+                            <div class="list-container-movie">
+                                <div class="image-container">
+                                    <a href="#"><img src="img/Star Wars_Episode V_The Empire Strikes Back.jpg" alt="" class="image-movie"></a>
+                                </div>
+                                <a href="#" class="name-movie">Зоряні війни: Епізод V - Імперія завдає удару у 
+                                    відповідь</a>
+                            </div>
+                            <div class="list-container-movie">
+                                <div class="image-container">
+                                    <a href="#"><img src="img/The_Matrix.jpg" alt="" class="image-movie"></a>
+                                </div>
+                                <a href="#" class="name-movie">Матриця</a>
+                            </div>
+                        </div>
+            </section>
+        </main>
+        <footer class="py-5 border-top bg-light">
+            <div class="row">
+                <div class="col">
+                </div>
+                <div class="col">
+                    <a href="#" class="d-flex link-dark text-decoration-none">Кіно-сайт</a>
+                    <p class="text-muted">© Кіносайт "" 2021-</p>
+                </div>
+                <div class="col">
+                    <h5>Каталог</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="text-dark" href="movie.html">Фільми</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-dark" href="#">Серіали</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Контакти</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <p class="text-dark">+380687520823</p>
+                        </li>
+                        <li class="nav-item">
+                            <p class="text-dark">arsenr412@gmail.com</щ>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                </div>
+            </div>
+        </footer>
+        </div>
+        <script src="Script/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

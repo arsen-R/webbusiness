@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ShowFilm.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
+                <div class="container-fluid">
+                    <a class="navbar-brand" asp-area="" href="index.html">
+                        KinoSite
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="movie.html">Фільми</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#">Серіали</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" asp-controller="Home" asp-action="Search" method="get">
+                            <input class="form-control me-2" type="search" id="searchString" placeholder="Search" aria-label="Search" name="SearchString">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="login.html">Логін</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="regist.html">Реєстрація</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div class="main">
+                    <div class="container-main">
+                        <div class="container-info-movie">
+                            <div class="image-container poster">
+                                <img src="img/Shrek.jpg" alt="" class="poster">
+                            </div>
+                            <table class="table-info">
+                                <tr>
+                                    <td colspan="2" class="title-movie">Шрек</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Shrek</td>
+                                </tr>
+                                <tr>
+                                    <td>Рейтинг</td>
+                                    <td>
+                                        <a href="#" class="rating">IMBD</a>: <span class="bold">7.8</span>
+                                        <a href="#" class="rating">Кинопоиск</a>: <span class="bold">8.0</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Слоган</td>
+                                    <td>"It's Big!"</td>
+                                </tr>
+                                <tr>
+                                    <td>Дата виходу:</td>
+                                    <td>22 квітня 2001 року</td>
+                                </tr>
+                                <tr>
+                                    <td>Країна:</td>
+                                    <td><span class="country">США</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Режисер:</td>
+                                    <td>
+                                        <span class="item">
+                                            <span class="person-list" itemprop="director">
+                                                <a href="#"><span class="name">Ендрю Адамсон</span></a>
+                                        </span>
+                                        </span>,
+                                        <span class="item">
+                                            <span class="person-list" itemprop="director">
+                                                <a href="#"><span class="name">Вікі Джексон</span></a>
+                                        </span>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Продюсер:</td>
+                                    <td>
+                                        <span class="item">
+                                            <span class="person-list" itemprop="producer">
+                                                <a href="#"><span class="name">Джефрі Каценберг</span></a>
+                                        </span>
+                                        </span>,
+                                        <span class="item">
+                                            <span class="person-list" itemprop="producer">
+                                                <a href="#"><span class="name">Джон Вільямс</span></a>
+                                        </span>
+                                        </span>,
+                                        <span class="item">
+                                            <span class="person-list" itemprop="producer">
+                                                <a href="#"><span class="name">Арон Ворнер</span></a>
+                                        </span>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Жанр:</td>
+                                    <td>
+                                        <a href="#"><span class="genre">Пригоди</span></a>,
+                                        <a href="#"><span class="genre">Комедії</span></a>,
+                                        <a href="#"><span class="genre">Фентезі</span></a>,
+                                        <a href="#"><span class="genre">Сімейні</span></a>,
+                                        <a href="#"><span class="genre">Дитячі</span></a>,
+                                        <a href="#"><span class="genre">Повнометражні</span></a>,
+                                        <a href="#"><span class="genre">Зарубіжні</span></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Вік:</td>
+                                    <td><span class="age">6+</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Тривалість:</td>
+                                    <td>90 хв.</td>
+                                </tr>
+                                <tr>
+                                    <div class="list-persone">
+                                        <td>У головних ролях:</td>
+                                        <td>
+                                            <span class="item">
+                                                <span class="person-list" itemprop="actor"> 
+                                                    <a href="#">
+                                                        <span class="name">Майк Майерс</span>
+                                            </a>
+                                            </span>
+                                            </span>,
+                                            <span class="item">
+                                                <span class="person-list" itemprop="actor">
+                                                    <a href="#">
+                                                        <span class="name">Камерон Діаз</span>
+                                            </a>
+                                            </span>
+                                            </span>,
+                                            <span class="item">
+                                                <span class="person-list" itemprop="actor">
+                                                    <a href="#">
+                                                        <span class="name">Едді Мерфі</span>
+                                            </a>
+                                            </span>
+                                            </span>,
+                                            <span class="item">
+                                                <span class="person-list" itemprop="actor">
+                                                    <a href="#">
+                                                        <span class="name">Джон Лізгоу</span>
+                                            </a>
+                                            </span>
+                                            </span>
+                                        </td>
+                                    </div>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="description">
+                            <h2>Про що мультфільм "Шрек"</h2>
+                            <div class="descriptions-text">
+                                Десь в болотистій місцевості живе зелений велетень, страшний огр на ім'я Шрек. Він лякає жителів казкового королівства, щоб вони НЕ порушували його звичайний спокій. Але одного разу лорд Фаркуад, правитель Дюлока, виганяє земель всіх казкових мешканців
+                                до лісу, прибрав їх подалі від людських очей. Тепер будинок Шрека наповнений цілим натовпом бездомних: Печенюшка, Червона шапочка, Піннокіо, три поросяти, що говорить Осел та інші казкові персонажі. Розлютившись, Шрек вирішує
+                                розібратися з порушником його спокою, і повернути назад в свої будинки всіх казкових істот. Для цього він вирушає до Фаркуада. Разом з ним пов'язується балакучий, вічно набридають Шреку говорить Осел, якого Шрек один раз
+                                вже врятував від солдатів правителя. Тут і починаються їхні пригоди, в якому Шреку належить викрити плани лорда, повернути своє болото, і, звичайно ж врятувати прекрасну принцесу Фіону.
+                            </div>
+                        </div>
+                        <div class="movie-video">
+                            <iframe src="https://28.svetacdn.in/MrJszJIePquE/movie/2027" width="1200" height="680" frameborder="0" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="commentars">
+                            <h2>Коментарі</h2>
+                            <textarea name="commentar-container" id="" placeholder="Додати коментарій" class="textarea-container"></textarea>
+
+                            <div class="comentar">
+                                <div class="icon-account">
+                                    <a href="#" class="icon-account"><img src="Icon/icons8-contacts-64.png" alt=""></a>
+                                </div>
+                                <div class="commentar-text">
+                                    <div class="user-name">Cinocritick</div>
+                                    <p class="coment-texblock"><span class="text">Адміністрація, а можна українську озвучку, вона досить непогана</span></p>
+                                    <a href="#" class="answer">Відповісти</a>
+                                    <a href="#" class="like">Підтримую</a>
+                                </div>
+                            </div>
+                            <div class="comentar">
+                                <div class="icon-account">
+                                    <a href="#" class="icon-account"><img src="Icon/icons8-contacts-64.png" alt=""></a>
+                                </div>
+                                <div class="commentar-text">
+                                    <div class="user-name">Катерина Євролова</div>
+                                    <p><span class="text">мультфільм детства</span></p>
+                                    <a href="#" class="answer">Відповісти</a>
+                                    <a href="#" class="like">Підтримую</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="py-5 border-top bg-light">
+            <div class="row">
+                <div class="col">
+                </div>
+                <div class="col">
+                    <a href="#" class="d-flex link-dark text-decoration-none">Кіно-сайт</a>
+                    <p class="text-muted">© Кіносайт "" 2021-</p>
+                </div>
+                <div class="col">
+                    <h5>Каталог</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="text-dark" href="movie.html">Фільми</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-dark" href="#">Серіали</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Контакти</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <p class="text-dark">+380687520823</p>
+                        </li>
+                        <li class="nav-item">
+                            <p class="text-dark">arsenr412@gmail.com</щ>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="Script/bootstrap.bundle.min.js"></script>
+
+</html>

@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
@@ -48,42 +48,38 @@
         </header>
         <main>
             <section>
-                <div class="main">
-                    <div class="container-movie">
-                        <div class="movie-container-block">
-                            <div class="list-container-movie">
-                                <div class="image-container">
-                                    <a href="showfilm.html"><img src="img/Shrek.jpg" alt="" class="image-movie"></a>
-                                </div>
-                                <a href="#" class="name-movie">Шрек</a>
+                <div class="login-container">
+                    <img src="img/Cinema.png" alt="" class="image">
+                    <div class="form-login">
+                        <h1>Ласкаво просимо</h1>
+                        <form action="">
+                            <div class="textbox">
+                                <input type="text" name="email" id="" class="login" placeholder="Логін або email" value="">
                             </div>
-                            <div class="list-container-movie">
-                                <div class="image-container">
-                                    <a href="#"><img src="img/mandalorian.jpg" alt="" class="image-movie"></a>
-                                </div>
-                                <a href="#" class="name-movie">Мандалорець</a>
+                            <div class="textbox">
+                                <input type="password" name="password" id="" class="password" placeholder="Пароль" value="">
                             </div>
-                            <div class="list-container-movie">
-                                <div class="image-container">
-                                    <a href="#"><img src="img/cursed.jfif" alt="" class="image-movie"></a>
-                                </div>
-                                <a href="#" class="name-movie">Проклята</a>
-                            </div>
-                            <div class="list-container-movie">
-                                <div class="image-container">
-                                    <a href="#"><img src="img/Soul.jfif" alt="" class="image-movie"></a>
-                                </div>
-                                <a href="#" class="name-movie">Душа</a>
+                            <button type="submit" class="button-log-in">Увійти</button>
+                            <div class="textbox">
+                                <a href="#" class="forgot-password">Забули пароль?</a>
+                                <input type="checkbox" name="checkbox" id="">
+                                <label for="checkbox">Запам'ятати мене</label>
                             </div>
 
-                            <div class="list-container-movie">
-                                <div class="image-container">
-                                    <a href="#"><img src="img/Drunk.jpg" alt="" class="image-movie"></a>
-                                </div>
-                                <a href="#" class="name-movie">Ще по одній</a>
+                            <h4>Або увійдіть за допомогою</h4>
+                            <div class="social">
+                                <a href="#">
+                                    <img src="SocialIcon/facebook.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="SocialIcon/search.png" alt="">
+                                </a>
                             </div>
-                        </div>
+
+                        </form>
+                        <p>Не маєте облікового запису?<a href="regist.html" class="link-for-sing-up">Зареєструйтесь</a></p>
                     </div>
+                </div>
             </section>
         </main>
         <footer class="py-5 border-top bg-light">
@@ -120,8 +116,8 @@
                 </div>
             </div>
         </footer>
-        </div>
-        <script src="Script/bootstrap.bundle.min.js"></script>
+    </div>
 </body>
+<script src="Script/bootstrap.bundle.min.js"></script>
 
 </html>
